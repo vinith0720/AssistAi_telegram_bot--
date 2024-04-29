@@ -42,10 +42,10 @@ if __name__ == '__main__':
     application.add_handler(CommandHandler('help', help))
 
     # Message Handler for Gemini
-    #application.add_handler(MessageHandler(filters.Text & ~ filters.Command, gemini_handler))
+  
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, gemini_handler))
 
-    #application.add_handler(MessageHandler(Filters.text & ~Filters.command, gemini_handler))
+   
 
 
     # Run bot
